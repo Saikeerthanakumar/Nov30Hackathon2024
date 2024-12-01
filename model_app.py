@@ -33,8 +33,7 @@ def predict(data: Input) -> Output:
     print(X_input.columns)
     
 #load model
-    model = joblib.load('jobchg_pipeline_model.pkl')
-   ## model = joblib.load('promo_pipeline_model.pkl')
+    model = joblib.load('insurance_pipeline_model.pkl')
     
     #predict
     prediction = model.predict(X_input)
